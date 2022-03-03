@@ -1,0 +1,22 @@
+.islam-order{
+    background: $bg_gray;
+    padding: 30px 0px;
+
+    &__title{
+        font-size: 30px;
+        color: $text_black;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__info{
+        max-width: 888px;
+        margin: 0 auto;
+       & p{
+            font-size: 20px;
+            color: $text_dark;
+            margin: 20px;
+        }
+    }
+}

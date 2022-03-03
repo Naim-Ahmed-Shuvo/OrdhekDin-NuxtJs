@@ -1,0 +1,35 @@
+footer{
+    padding: 40px 0;
+    width: 100%;
+    background: $footer;
+    color: $white;
+
+    & .footer-terms{
+        text-align: center;
+      & a{
+          color: inherit;
+          margin: 0 10px;
+          font-size: 13px;
+          transition: all .2s ease-in-out;
+
+          &:hover{
+              color: $nav-icon;
+          }
+      }
+    }
+    & .footer-links{
+        text-align: right;
+      & p{
+           display: inline-block;
+           margin: 0 20px;
+            & a{
+                color: $white;
+                transition: all .2s ease-in-out;
+
+          &:hover{
+              color: $nav-icon;
+          }
+            }
+       }
+    }
+}

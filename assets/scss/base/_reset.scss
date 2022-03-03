@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: $body;
+}
+
+body, p, div, h1, h2, h3, h4, h5, h6,span,pre,a,section,b,i,em ,ol,ul,li{
+    font-family: 'SolaimanLipi' !important;
+    margin: 0;
+    padding: 0;
+}
+
+body ul li{
+    list-style: none;
+}
+
+body a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        outline: none;
+        border: none;
+    }
+    &:visited{
+        outline: none;
+        border: none;
+        
+        text-decoration: none;
+    }
+}
