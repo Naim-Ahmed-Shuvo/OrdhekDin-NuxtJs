@@ -1,7 +1,15 @@
 .more-info{
     min-height: 40vh;
     padding: 30px 0px;
-
+    @media (max-width: $xs){
+        margin-top: 548px;
+    }
+    @media(min-width: $sm){
+        margin-top: 415px;
+    }
+    @media(min-width: $md){
+        margin-top: 84px;
+    }
     & .button-1{
         padding: 20px 50px;
         border-radius: 5px;
@@ -14,6 +22,14 @@
         background: $btn_secondary;
         color: $white;
 
+        @media (max-width: $xs){
+            padding: 9px 9px;
+
+            font-size: 28px;
+
+            min-width: 278px;
+
+        }
         & a{
             color: inherit;
         }
@@ -40,12 +56,31 @@
     &__cards{
         margin-top: 150px;
         margin-bottom: 100px;
+
+        & .col-12{
+
+            @media (max-width: $xs){
+               margin: 10px 0px;
+            }
+        }
+        & .col2,.col3{
+            @media (min-width: $md){
+               
+                margin-top: 20px;
+            }
+        }
         & .card-container{
             max-width: 250px;
             padding: 20px 7px;
             min-height: 282px;
             text-align: center;
             box-shadow: 0 3px 12px -2px #f0f0f0;
+            @media(max-width: $xs){
+                max-width: 100%;
+            }
+            @media (min-width: $md){
+                min-width: 100%;
+            }
             &__img{
                & img{
                 width: 100%;

@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="row more-info__cards">
-        <div class="col-3" v-for="(data,idx) in cardData" :key="idx">
+        <div :class="`col-12 col-sm-6 col-md-6 col-lg-3 col${idx}`" v-for="(data,idx) in cardData" :key="idx">
           <div class="card-container">
             <div class="card-container__img">
               <img :src="data.image" alt="img" />

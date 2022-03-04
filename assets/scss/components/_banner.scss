@@ -4,37 +4,102 @@ section .banner{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 150px 0 150px 0;
-
+    padding: 150px 0;
+    @media (max-width: $xs){
+       padding: 60px 0;
+       background-size: 415% 116%;
+       background-position: 66% 87%;
+    }
+    @media (min-width: $sm){
+        padding: 80px;
+       position: relative;
+    }
+    @media (min-width: $md){
+        background-position: -452px -39px;
+    }
+    @media (min-width: $lg){
+        background-size: 199% 106%;
+        background-position: -487px -43px;
+    }
+    @media (min-width: $xl){
+        background-size: auto 125%;
+        background-position: 49% 67%;
+    }
+    @media (min-width: $xxl){
+        background-size: 147%;
+        background-position: center;
+    }
     & .search-card{
         color: $white;
         background: $search_card;
         text-align: center;
         padding: 20px;
         border-radius: 7px;
+        max-width: 483px;
+        @media (max-width: $xs){
+            position: absolute;
+            left: 7%;
+            width: 89%;
+            top: 54%;
+        }
+         @media (min-width: $sm){
+            position: absolute;
+            left: 7%;
+            width: 89%;
+            top: 121%;
+         }
+         @media (min-width: $md){
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 135%;
+            margin-left: -62px;
+         }
+         @media (min-width: $lg){
+            margin-left: -62px;
+         }
+         @media(min-width: $xl){
+            margin-left: 21px;
+            max-width: 437px;
+         }
+         @media (min-width: $xxl){
+            left: 20%;
+         }
         & .input-group{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: right;
             margin: 10px 0px;
-
+            @media (max-width: $xs){
+                justify-content: left;
+            }
            &__label{
                 font-size: 22px;
-                text-align: right;
-                min-width: 111px;
+                @media (max-width: $xs){
+                    margin-left: 10px;
+                }
+                justify-content: right;
+                @media (min-width: $md){
+                    min-width: 0px;
+                }
+
            }
             & .custom-select{
                 cursor: pointer;
                 margin-left: 10px !important;
                 display: inline-block;
+                @media (min-width: $sm){
+                    min-width: 300px;
+                }
+                @media (min-width: $md){
+                    min-width: 200px;
+                }
                 & select{
                     width: 100%;
-                    min-height: 35px;
                     min-width: 200px;
-                    appearance: none;
                     background: $search_box;
                     line-height: 35px;
-                    padding-left: 5px;
+                    padding: 7px 5px;
                     position: relative;
                     color: $white;
                     font-size: 1.1rem;
@@ -42,33 +107,16 @@ section .banner{
                         color: $white;
                     }
                 }
-                &::after{
-                    content: "";
-                    display: block;
-                    width: 0;
-                    height: 0;
-                    border: solid 5px;
-                    border-color: #fff transparent transparent transparent;
-                    position: absolute;
-                    left: 87%;
-                    top: 46%;
-                }
-            }
 
-            & .custom-input{
-                margin-left: 10px !important;
                 & input{
-                    min-height: 35px;
+                    width: 100%;
                     min-width: 200px;
-                    appearance: none;
                     background: $search_box;
                     line-height: 35px;
-                    padding-left: 5px;
+                    padding: 0 5px;
                     position: relative;
                     color: $white;
-                    font-size: 1.1rem;
-                    box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
-                    font-size: 13PX;
+                    font-size: 0.8rem;
                 }
 
                 & button{
@@ -81,9 +129,40 @@ section .banner{
                     font-size: 18px;
                 }
             }
+
+            // & .custom-input{
+            //     margin-left: 10px !important;
+            //     @media (min-width: $sm){
+            //         min-width: 300px;
+            //     }
+            //     @media (min-width: $md){
+            //         min-width: 200px;
+            //     }
+            //     & input{
+            //         min-height: 35px;
+            //         width: 100%;
+            //         appearance: none;
+            //         background: $search_box;
+            //         line-height: 35px;
+            //         padding-left: 5px;
+            //         position: relative;
+            //         color: $white;
+            //         font-size: 1.1rem;
+            //         box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+            //         font-size: 13PX;
+            //     }
+
+            
+            // }
         }
     }
     & .welcome{
+        @media (min-width: $md){
+            padding-top: 20px;
+        }
+        @media (min-width: $lg){
+            margin-left: 59px;
+        }
         &-text{
             color: $white;
             font-size: 50px;
@@ -91,6 +170,21 @@ section .banner{
             font-family: 'ShobujNolua' !important;
             max-width: 700px;
             margin: 0 auto;
+
+            @media (max-width: $xs){
+                font-size: 23px;
+            }
+            @media (min-width: $sm){
+                font-size: 30px !important;
+            }
+            @media (min-width: $md){
+                max-width: 509px;
+            }
+            @media  (min-width: $lg) {
+                max-width: 509px;
+                font-size: 31px !important;
+            }
+            
         }
         &-txt-bottom{
             font-size: 20px;

@@ -21,12 +21,20 @@ export const state = () => ({
             amount: "  384 + ",
             text:"সর্বমোট সফল বিবাহ " 
         }
-    ]
+    ],
+    openSideNav: false
   })
   
   export const mutations = {
     increment(state) {
       state.counter++
+    },
+    openSideNav(state){
+       state.openSideNav = true;
+       console.log(state.openSideNav);
+    },
+    hideSideNav(state){
+        state.openSideNav = false;
     }
   }
   
