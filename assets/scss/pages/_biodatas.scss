@@ -1,0 +1,140 @@
+.bio-datas{
+    margin-bottom: 100px;
+    & .bio-data-header{
+        background: $bg_biodata;
+        padding: 30px 0px;
+        & .biodata-form-wrapper{
+            margin-left: 30px;
+            & .input-container{
+                display: flex;
+                align-items: center;
+                @media (max-width: $xs){
+                    flex-direction: column;
+                    margin: 23px 0px;
+                }
+                & .input-label{
+                    min-width: 96px;
+                    @media (max-width: $xs){
+                        width: 100%;
+                    }
+                    & label{
+                        font-size: 22px;
+                        color: $white;
+                    }
+                }
+                & .input-input{
+                    width: 100%;
+                    margin: 10px 0px;
+                    & select{
+                        width: 100%;
+                        background: transparent;
+                        border: 1px solid rgba($white,0.8);
+                        padding: 7px 5px;
+                        color: $white;
+                        font-size: 20px;
+                    }
+                    & input{
+                        width: 100%;
+                        background: transparent;
+                        border: 1px solid rgba($white,0.8);
+                        padding: 7px 5px;
+                        color: $white;
+                        font-size: 14px; 
+                    }
+                }
+    
+                & .input-button{
+                    margin-top: 20px;
+                    & button{
+                        padding: 5px 10px;
+                        background: transparent;
+                        color: $white;
+                        border: 1px solid $white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    & .biodata-content{
+        & .title{
+            text-align: center;
+            & h4{
+                font-size: 46px;
+                color: $text_black;
+            }
+        }
+
+        & .biodatas{
+            & .biodatas__cards{
+               & .col-12{
+
+                   @media (min-width: 300px){
+                     margin: 10px 0;
+                   }
+                   
+                }
+                & .biodatas__card{
+                    border: 1px solid rgba($text_secondary,0.6);
+                    width: 100%;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    & .card__header{
+                        background: $text_secondary;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 25px 0;
+                        &__img{
+                             & img{
+                                width: 100px;
+                            }
+                        }
+                        &__number{
+                            margin-top: 10px;
+                            & h4{
+                                color: $white;
+                                text-align: center;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    & .card__body{
+                        width: 100%;
+                        padding: 0 40px;
+                        @media (min-width: $lg){
+                            padding: 0 20px;
+                        }
+                        & tr{
+                            border-top: 1px solid rgba($color: #522B79, $alpha: 1.0);
+                            border-bottom: 1px solid rgba($color: #522B79, $alpha: 1.0);
+                            & th{
+                                border-right: 1px solid rgba($color: #522B79, $alpha: 1.0);
+                            }
+                        }
+                        & .card__button{
+                            display: block;
+                          text-align: center;
+                          min-width: 176px;
+                          padding-bottom: 34px;
+                          margin-top: 34px;
+                          & a{
+                              text-decoration: none;
+                              outline: none;
+                              padding: 11px 36px;
+                              background-color: #522B79;
+                              font-size: 20px;
+                              color: $white;
+                              border-radius: 3px;
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

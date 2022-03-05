@@ -22,6 +22,84 @@ export const state = () => ({
             text:"সর্বমোট সফল বিবাহ " 
         }
     ],
+    bioDatas: [
+        {
+            img: require("@/assets/images/Female-v2.svg"),
+            bioText: "Biodata Number",
+            bioNUmber: "50345",
+            bioInfo:[
+                {
+                    title:"বৈবাহিক অবস্থা",
+                    value: "অবিবাহিত"
+                },
+                {
+                    title:"জন্মসন",
+                    value: "১৯৯৯"
+                },
+                {
+                    title:"পেশা",
+                    value: "ছাত্রী"
+                },
+            ]
+        },
+        {
+            img: require("@/assets/images/Female-v2.svg"),
+            bioText: "Biodata Number",
+            bioNUmber: "50343",
+            bioInfo:[
+                {
+                    title:"বৈবাহিক অবস্থা",
+                    value: "অবিবাহিত"
+                },
+                {
+                    title:"জন্মসন",
+                    value: "১৯৯৯"
+                },
+                {
+                    title:"পেশা",
+                    value: "ছাত্রী"
+                },
+            ]
+        },
+        {
+            img: require("@/assets/images/Female-v2.svg"),
+            bioText: "Biodata Number",
+            bioNUmber: "50342",
+            bioInfo:[
+                {
+                    title:"বৈবাহিক অবস্থা",
+                    value: "অবিবাহিত"
+                },
+                {
+                    title:"জন্মসন",
+                    value: "১৯৯৯"
+                },
+                {
+                    title:"পেশা",
+                    value: "ছাত্রী"
+                },
+            ]
+        },
+        {
+            img: require("@/assets/images/Female-v2.svg"),
+            bioText: "Biodata Number",
+            bioNUmber: "50347",
+            bioInfo:[
+                {
+                    title:"বৈবাহিক অবস্থা",
+                    value: "অবিবাহিত"
+                },
+                {
+                    title:"জন্মসন",
+                    value: "১৯৯৯"
+                },
+                {
+                    title:"পেশা",
+                    value: "ছাত্রী"
+                },
+            ]
+        },
+    ],
     openSideNav: false
   })
   

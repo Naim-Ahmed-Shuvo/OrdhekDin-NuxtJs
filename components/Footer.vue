@@ -2,12 +2,12 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <div class="footer-info">
             <p>© 2021 - 2022 ordhekdeen.com.</p>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <div class="footer-links">
             <p>
               <a href="#">Our Facebook Page</a>

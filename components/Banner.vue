@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12 col-md-6 col-lg-5 order-2 order-md-1 order-lg-1">
           <div class="search-card">
-            <form action="#" class="search-card__form">
+            <form @submit.prevent="handleSubmit" class="search-card__form">
               <div class="input-group">
                 <div class="input-group__label">
                   <label for="#">আমি খুঁজছি </label>
@@ -74,6 +74,12 @@
 <script>
 export default {
   name: "banner",
+  methods:{
+    handleSubmit(){
+      console.log(this.$router);
+      this.$router.push('/slug')
+    }
+  }
 };
 </script>
 

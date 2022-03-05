@@ -1,0 +1,77 @@
+.single-biodata{
+    margin: 50px 0px;
+ & .single-biodata__left{
+     background-color: #522B79;
+     overflow: hidden;
+     border-radius: 8px;
+     &__card{
+          padding: 20px 20px;
+         &__header{
+             &__img{
+                 width: 100%;
+                 & img{
+                     display: block;
+                     width: 150px;
+                     margin: 0 auto;
+                 }
+             }
+             &__number{
+                 text-align: center;
+                 & h4{
+                     color: $white;
+                     font-size: 22px;
+                     margin-top: 10px;
+                 }
+             }
+         }
+         &__body{
+             & table{
+                 width: 100%;
+                 & tbody{
+                     width: inherit;
+                     & tr{
+                         width: inherit;
+                        color: $white;
+                        border-top: 1px solid rgba($white,0.5);
+                        border-bottom: 1px solid rgba($white,0.5);
+                        padding: 0px 0px;
+                        margin: 10px 0px;
+                        display: flex;
+                        justify-content: center;
+                        & th{
+                            flex: 0.5;
+                            border-right: 1px solid rgba($white,0.5);
+                            padding: 7px 0px; 
+                        }
+                        &  td{
+                            flex: 0.5; padding: 7px 0px; 
+                        }
+                     }
+                 }
+             }
+
+             & .card__button{
+                 margin: 20px 0px;
+                 & button{
+                    margin: 0 auto;
+                    display: block;
+                     background: $white;
+                     color: #522B79;
+                     font-size: 20px;
+                     padding: 10px 20px;
+                 }
+             }
+         }
+     }
+ }
+
+ & .right__wrapper{
+     & .card{
+         &-header{
+             & h4{
+                 color: #522B79;
+             }
+         }
+     }
+ }
+}

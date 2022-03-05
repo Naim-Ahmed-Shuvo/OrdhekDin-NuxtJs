@@ -4,10 +4,12 @@
       <div class="row">
         <div class="col-2 d-flex align-items-center">
           <div class="logo-container">
-            <img src="@/assets/images/ordhekdeen-logo.svg" alt="logo" />
+            <nuxt-link to="/">
+              <img src="@/assets/images/ordhekdeen-logo.svg" alt="logo" />
+            </nuxt-link>
           </div>
           <div class="mobile-menu" @click="openSideNav">
-              <span></span>
+            <span></span>
           </div>
         </div>
         <div class="col-8">
@@ -36,11 +38,11 @@
 <script>
 export default {
   name: "name",
-  methods:{
-    openSideNav(){
-      this.$store.commit('openSideNav');
-    }
-  }
+  methods: {
+    openSideNav() {
+      this.$store.commit("openSideNav");
+    },
+  },
 };
 </script>
 
